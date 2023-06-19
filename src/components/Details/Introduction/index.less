@@ -1,0 +1,146 @@
+.Introduction {
+    color: #fff;
+
+    h4 {
+        color: #fff;
+    }
+
+    p {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .introduction-text {
+        position: relative;
+        padding-top: .5rem;
+        padding: 1rem;
+
+        .introduction-tags {
+            font-size: .6rem;
+            color: #999;
+        }
+
+        .introduction-text {
+            display: block !important;
+            font-size: .8rem;
+            color: #ccc;
+        }
+
+        .isShow {
+            height: 4.8rem;
+            overflow: hidden;
+        }
+
+        .showHidden {
+            position: relative;
+
+            z-index: 1;
+            background: black;
+            box-shadow: -2px 0px 10px 3px black;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .showIcon {
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background: #666;
+            text-align: center;
+            line-height: .9rem;
+            position: absolute;
+            right: 2rem;
+            bottom: 1rem;
+            z-index: 99;
+
+            i {
+                font-size: .6rem;
+            }
+        }
+    }
+
+    .introduction-icon {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: .5rem;
+        text-align: center;
+        color: #fff;
+        padding: 1rem;
+
+        i {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #fff;
+        }
+
+        p {
+
+            display: block !important;
+        }
+    }
+
+    hr {
+        width: 100%;
+        padding: 0 2rem;
+        margin-left: -2rem;
+        border: .5px solid #666;
+    }
+
+    .introduction-extend {}
+}
+
+.down {
+    animation: 0.3s ease-in alternate downRotate;
+    transform: rotateZ(180deg);
+}
+
+.up {
+    animation: 0.3s ease-in alternate upRotate;
+    transform: rotateZ(360deg);
+}
+
+@keyframes downRotate {
+    0% {
+        transform: rotateZ(10deg);
+    }
+
+    25% {
+        transform: rotateZ(70deg);
+    }
+
+    50% {
+        transform: rotateZ(140deg);
+    }
+
+    75% {
+        transform: rotateZ(180deg);
+    }
+
+    100% {
+        transform: rotateZ(200deg);
+    }
+}
+
+@keyframes upRotate {
+    0% {
+        transform: rotateZ(190deg);
+    }
+
+    25% {
+        transform: rotateZ(250deg);
+    }
+
+    50% {
+        transform: rotateZ(320deg);
+    }
+
+    75% {
+        transform: rotateZ(360deg);
+    }
+
+    100% {
+        transform: rotateZ(380deg);
+    }
+}

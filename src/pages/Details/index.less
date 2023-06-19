@@ -1,0 +1,77 @@
+.Details{
+    background-color: black;
+    .Details-header{
+      .Details-top{
+        padding: .5rem 1rem;
+        display: flex;
+        color: #fff;
+        .top-author{
+            margin-left: 1rem;
+
+            img {
+                width: 2rem;
+                border-radius: 50%;
+            }
+            p {
+                display: inline;
+                font-size: .6rem;
+                margin-left: .6rem;
+            }
+        }
+        .icon-jia {
+            position: absolute;
+            right: 1rem;
+        }
+      }
+      i {
+        font-size: 1.3rem;
+        font-weight: 800;
+        z-index: 9999;
+    }  
+    }
+    .playVideo{
+        i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            color: #fff;
+            z-index: 99;
+        }
+
+        .icon-hanhan-01 {
+            left: 30% !important;
+        }
+
+        .icon-hanhan-011 {
+            left: 70% !important;
+        }
+
+        .videoMask {
+            position: absolute;
+            height: 15rem;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 999;
+        }
+        video{
+            height: 15rem; 
+        }
+    }
+    .Details-bottom{
+        color:#fff;
+        padding: .5rem 0;
+        p{
+            display: inline;
+            margin: 1rem;
+            padding: .2rem 0;
+        }
+        
+    }
+
+    .deIsActive{
+        border-bottom: 1px solid #fff;
+    }
+}

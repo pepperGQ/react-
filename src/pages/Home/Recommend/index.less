@@ -1,0 +1,36 @@
+.content-card{
+    display: flex;
+    margin: .5rem 1rem;
+    border: 1px solid rgb(193, 193, 193);
+    border-radius: .3rem;
+    .card-left{
+        position: relative;
+        img {
+            width: 10rem;
+            height: 5rem;
+        }
+        i{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.3rem;
+        }
+    }
+    .card-right{
+        width: 15rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .card-right-top {
+            margin: .2rem
+        }
+        .card-right-bottom{
+            display: flex;
+            justify-content: space-between;
+            font-size: .3rem;
+            margin: .2rem;
+        }
+
+    }    
+}
